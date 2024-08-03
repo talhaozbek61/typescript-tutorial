@@ -160,7 +160,7 @@ let betterFunc = (user: UserType) => {
 };
 
 //FUNCTION SIGNATURES
-type myFunc = (a: number, b: number) => void;
+type myFunc = (a: number, b: string) => void;
 
 let write: myFunc = (num, str) => {
   console.log(num + " times " + str);
@@ -231,7 +231,7 @@ interface IPostBetter<T> {
   extra: T[];
 }
 
-const testMe: IPostBetter<string> = {
+const testMe: IPostBetter<String> = {
   id: 1,
   title: "Test",
   desc: "post desc",
@@ -264,4 +264,11 @@ const testMe4: IPostEvenBetter<ICategory> = {
   title: "Title",
   desc: "post desc",
   extra: [{ id: 4, title: "Title" }],
+};
+
+const testMe5: IPostEvenBetter<IAuther | ICategory> = {
+  id: 12,
+  title: "Test Me 5",
+  desc: "Testing",
+  extra: [{ id: 12, title: "hop", username: "hoppala" }],
 };
