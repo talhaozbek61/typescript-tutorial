@@ -3,7 +3,12 @@ import { CharacterProps } from "../types/types";
 import Image from "next/image";
 import { GoDotFill } from "react-icons/go";
 
-export default function PostCart({ id, name, status, image }: CharacterProps) {
+export default function CharacterCart({
+  id,
+  name,
+  status,
+  image,
+}: CharacterProps) {
   return (
     <article
       key={id}

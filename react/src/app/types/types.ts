@@ -3,5 +3,4 @@ export type CharacterProps = {
   name: string;
   status: string;
   image: string;
-  location: object;
 };

@@ -33,7 +33,7 @@ export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <header className="relative mx-auto max-w-7xl flex items-center justify-between p-4 text-sm text-gray-100">
+    <header className="relative mx-auto max-w-7xl flex items-center justify-between px-4 py-6 text-sm text-gray-100">
       <Link href="/" className="flex-1">
         Logo
       </Link>
