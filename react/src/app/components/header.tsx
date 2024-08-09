@@ -64,7 +64,7 @@ export default function Header() {
       </ul>
       {/* Dropdown */}
       {showDropdown && (
-        <div className="absolute flex flex-col right-56 -bottom-[300px] bg-zinc-50 px-6 py-3 rounded-xl space-y-3 ring-1 ring-gray-300 dropdown">
+        <div className="absolute flex flex-col right-56 -bottom-[300px] bg-zinc-50 px-6 py-3 rounded-xl space-y-3 ring-1 ring-gray-300 dropdown max-md:hidden">
           {dropdown.map((menu, mIdx) => (
             <Link
               href={menu.href}
